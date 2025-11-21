@@ -74,19 +74,46 @@ df.groupby('job_title')['salary'].mean().sort_values(ascending=False).head(10)
 
 The highest-paying roles were in AI, Machine Learning, and Senior Data Engineering, with significantly higher average salaries.
 
-2️⃣ Salary vs Experience Level
-🔎 Code
+##2️⃣ Salary vs Experience Level
+
+###🔎 Code
 df.groupby('experience_level')['salary'].mean()
 📈 Visualization
 
 📝 Insight
 
 Salary increases consistently from Entry-level → Mid-level → Senior-level → Executive-level, showing a clear experience-to-salary growth pattern.
-3️⃣ Top Paying Locations
-🔎 Code
+##3️⃣ Top Paying Locations
+
+###🔎 Code
 df.groupby('employee_residence')['salary'].mean().sort_values(ascending=False).head(10)
 📈 Visualization
 
 📝 Insight
 
 Countries like Chile (CL), Hungary (HU), and Japan (JP) showed the highest average salaries in the dataset.
+##4️⃣ Does Employment Type Affect Salary?
+
+###🔎 Code
+df.groupby('employment_type')['salary'].mean()
+
+📈 Visualization
+
+📝 Insight
+
+Larger companies tend to offer higher salaries compared to medium and small companies, reflecting bigger budgets and stronger organizational structures.
+
+##🏁 Conclusion
+This analysis reveals clear patterns in 2024 salary data:
+
+Job title strongly affects salary (AI & ML roles lead).
+
+Experience level has a direct positive impact on salary.
+
+Location plays a major role in compensation.
+
+Employment type influences pay rates significantly.
+
+Bigger companies generally pay higher salaries.
+
+This makes the dataset extremely useful for career planning, salary benchmarking, and global compensation insights.
